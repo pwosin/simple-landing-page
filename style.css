@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900i&subset=latin-ext');
+ *{
+     box-sizing: border-box;
+ }
+
+ body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+ }
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ header{
+     width: 100%;
+     background: url('./images/Image.jpg') right bottom /cover no-repeat;
+     min-height: 100vh;
+     
+ }
+/* Header */
+ header .headerButton {
+    display: flex;
+    padding-top: 30px;
+ }
+/* header circle button */
+ header .headerButton .circleButton{
+     width: 40px;
+     height: 40px;
+     background-color: transparent;
+     border-radius: 50%;
+     border: 3px white solid;
+     display: flex;
+     position: relative;
+}
+header .headerButton .circleButton::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px white solid;
+    position: absolute;
+    margin: 8px 8px;
+}
+
+header .headerButton .circleButton:hover{
+    animation: hearAnim 0.8s;
+}
+
+header .headerButton h5 {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    margin: 10px 10px;
+}
+
+ header .phonePicture {
+    max-height: 100%;
+   position: absolute;
+   right: 15vw;
+   top: 20vh;
+ }
+
+header .headerTitle {
+    width: 70vh;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 3;
+}
+
+/* Main text section */
+
+.mainText {
+    color: #959595;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.mainText h2 {
+    color: #222626;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.mainTextColumn {
+    padding: 20px;
+    margin: 10% auto;
+}
+
+.mainTextColumn.right {
+    margin-top: 30%;
+}
+
+/* Grid area */
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.tiles > div {
+    text-align: left;
+    height: 280px;
+    padding: 20px;
+}
+.tiles h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.tiles p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    height: 50%;
+}
+
+.tiles .gridLink a {
+    font-weight: 900;
+}
+/* arrow animation */
+.tiles .arrow {
+    margin-left: 5px;
+}
+.tiles .gridLink a:hover > .arrow, .bigPictureText a:hover > .arrow {
+    animation: arrowAnim .8s infinite;
+}
+@keyframes arrowAnim {
+    0% {
+        margin-left: 5px;
+    }
+    50% {
+        margin-left: 20px;
+    }
+    100% {
+        margin-left: 5px;
+    }
+}
+.tiles .gridLink {
+}
+
+/* heart button animation */
+
+.tiles  .gridLink .tilesButton{
+    float: right;
+ }
+
+ .tiles  .gridLink .tilesButton:hover{
+    animation: hearAnim 0.8s infinite;
+ }
+
+ @keyframes hearAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.tiles > div:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.tiles .design{
+    background-color: #f5989d;
+}
+
+.tiles .built {
+    background-color: #615f7d;
+}
+
+.tiles .clients{
+    background-image: url('./images/Layer_6.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.tiles .shoo {
+    background-color: #bd8cbf;
+}
+
+.tiles .signUp {
+    background-image: url('./images/signUp.png');
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / span 2;
+}
+
+.tiles .perfect {
+    background-color: #82ca9c;
+}
+
+.tiles .start {
+    background-image: url('./images/startNew.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.details {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.details h1 {
+    color: #222626;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.details .ourDetails{
+    color: #959595;
+    font-size: 14px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+} 
+/* big picture section */
+.bigPicture {
+    background: url('./images/bigPict.png') center/cover;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 0;
+}
+.bigPicture .bigPictureText {
+    width: 50%;
+    padding: 25% 0 0 15%;
+}
+
+.bigPicture .bigPictureText .tilte{
+    font-size: 50px;
+    line-height: 40px;
+    margin: 20px auto;
+}
+
+.bigPicture .bigPictureText p{
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.bigPicture .bigPictureText a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* Reasons to join section */
+
+.onBoard {
+    margin: 0 auto;
+    background-color: #82ca9c;
+    min-height: 70vh;
+
+}
+
+.onBoard h2 {
+    margin: 0 15px;
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.onBoard .advantages {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 20px;
+}
+
+/* pucharse plan section */
+
+.pucharse {
+    background-color: #f6f7fa;
+    min-height: 80vh;
+}
+
+.pucharse .pucharsePlans {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5% 0;
+}
+
+.pucharse .plans{
+  padding: 50px 30px; 
+  height: 100%;
+}
+.pucharse .plans:hover{
+    background: #fff;
+    box-shadow: 0 0 50px rgba(150, 150, 150, .5);  
+}
+
+.pucharse .plans .planLogo{ 
+    background-color: #bd8cbf;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.pucharse .plans .planLogo span{
+    padding: 0 10px;
+} 
+
+.pucharse .plans p{
+    color: #8297a7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.03px;
+    width: 80%;
+}
+.pucharse .plans h2{
+    color: #2e3b4e;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40.05px;
+}
+
+.pucharse .pucharseButton {
+    width: 151px;
+    height: 47px;
+    border-radius: 3px;
+    background-color: #82ca9c;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.pucharse .pucharseButton:hover {
+    background-color: #14df5e;
+    transition: .5s;
+}
+.pucharse .fab {
+    padding-top: 10px;
+    width: 24px;
+    height: 24px;
+    color: #c5c5c5;
+}
+
+/* footer  */
+footer {
+background-color: #192431;
+min-height: 100vh;
+}
+
+footer .contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+footer .contact .getInTouch{
+    width: 80%;
+    padding: 0 30px;
+}
+
+footer .contact .subscribe input{
+    width: 100%;
+    height: 3rem;
+}
+footer .contact .subscribe form{
+    width: 60%;
+    display: inline-block;
+}
+footer .contact .subscribe button{
+    display: inline;
+    position: relative;
+    right: 5px;
+    top: 1px;
+    width: 3rem;
+    height: 3rem;
+    background-color: #82ca9c;
+    font-size: 1rem;
+    color: #fff;
+}
+footer .contact .subscribe button:hover{
+    background-color: #14df5e;
+    transition: .5s;
+}
+
+footer .resources {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .resources .resourcesContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px 0 0 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+footer .resources ul {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+footer .resources a:hover {
+    text-decoration: underline;
+}
+
+/* media queries */
+
+@media all and (max-width: 991px) { 
+/* grid area */
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tiles > div{
+        width: 33%;
+        flex-grow: 1;
+    }
+
+    .tiles.clients, .tiles.signUp{
+        flex-grow: 2;
+}
+    .tiles div h2 {
+        font-size: 24px;
+    }
+/* details area */
+.details .ourDetails{
+    grid-template-columns: 50% 50%;
+    
+}
+
+footer .resources {
+    grid-template-columns: 100%;
+}
+}
+@media all and (max-width: 767px) {
+    .mainText {
+        grid-template-columns: 100%;
+        margin: 5em auto;
+        width: 80%;
+    }
+    
+    .mainTextColumn {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mainTextColumn.right {
+        margin-top: 0;
+    }
+
+
+.tiles > div{
+    width: 100%;
+}
+
+.details .ourDetails{
+    grid-template-columns: 100%;
+    width: 80%;
+    margin: 3em auto;
+    
+}
+
+.bigPicture .bigPictureText .title, .bigPicture .bigPictureText p, .bigPicture .bigPictureText a {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pucharse .pucharsePlans {
+    grid-template-columns: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .contact {
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+}
