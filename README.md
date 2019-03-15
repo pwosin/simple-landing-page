@@ -2,6 +2,7 @@
       
 ## simple-landing-page
     
+## General info
 Simple page with grid made of .psd file.
     
 ### Technologies/App used: 
