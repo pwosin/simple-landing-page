@@ -415,6 +415,16 @@ footer .resources a:hover {
 /* media queries */
 
 @media all and (max-width: 991px) { 
+    header .phonePicture{
+        max-width : 70%;
+    }
+
+    header {
+        min-height: 75vh;
+    }
+    .headerTitle { 
+        width: 60% !important;
+    }
 /* grid area */
     .grid{
         display: flex;
@@ -490,8 +500,12 @@ footer .contact {
 @media all and (max-width: 600px) { 
     .headerTitle {
         padding: 10px;
+        margin: 0;
         color: white;   
-        width: 300px !important;
+        width: 250px !important;
         background-color: rgba(0, 0, 0, 0.6)
+    }
+    .bigPictureText {
+        width: 250px !important;
     }
 }
