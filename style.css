@@ -443,6 +443,7 @@ footer .resources {
 }
 }
 @media all and (max-width: 767px) {
+ 
     .mainText {
         grid-template-columns: 100%;
         margin: 5em auto;
@@ -485,4 +486,12 @@ footer .contact {
     text-align: center;
 }
 
+}
+@media all and (max-width: 600px) { 
+    .headerTitle {
+        padding: 10px;
+        color: white;   
+        width: 300px !important;
+        background-color: rgba(0, 0, 0, 0.6)
+    }
 }
